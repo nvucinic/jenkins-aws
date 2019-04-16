@@ -22,4 +22,4 @@ In this example, we simply map port 8000 of the host to port 8080 of the Docker 
 docker run -d -p 8000:8080 --restart="always" nvucinic/jenkins-aws
 ```
 
-Verify the deployment by navigating to your server address in your preferred browser - localhost:8080
+Verify the deployment by navigating to your server address in your preferred browser - http://localhost:8080
