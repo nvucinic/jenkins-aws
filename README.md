@@ -1,4 +1,5 @@
-# [jenkins-aws](https://github.com/nvucinic/jenkins-aws#Docker) - jenkins with AWS plugins
+# [Jenkins-aws](https://github.com/nvucinic/jenkins-aws#Docker) - Jenkins with AWS plugins
+This project aims to build a pre-configured Docker image for Jenkins with AWS plugins.
 
 ![Jenkins+AWS Logo](https://raw.githubusercontent.com/nvucinic/jenkins-aws/master/logo/logo.png)
 
