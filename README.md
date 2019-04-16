@@ -4,11 +4,12 @@
 Jenkins-AWS is very easy to install and deploy in a Docker container.
 
 By default, the Docker will expose port 8080, so change this within the Dockerfile if necessary.
+
 When ready, simply use the Dockerfile to build the image.
 
 ```sh
 git clone git@github.com:nvucinic/jenkins-aws.git
-cd enkins-aws
+cd ejnkins-aws
 docker build -t nvucinic/jenkins-aws .
 ```
 This will create the jenkins-aws image and install all the necessary plugins.
