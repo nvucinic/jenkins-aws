@@ -1,4 +1,5 @@
-# jenkins-aws: docker with AWS plugins
+# [jenkins-aws] docker with AWS plugins
+# [docker-jenkins](https://github.com/nvucinic/jenkins-aws#Docker)
 
 ### Docker
 Jenkins-AWS is easy to install and deploy in a Docker container.
