@@ -4,6 +4,6 @@
 
 $ git clone git@github.com:nvucinic/jenkins-aws.git
 
-$ cd jenkins-aws
+$ cd jenkins-aws/
 
 $ docker build -t nvucinic/jenkins-aws .
