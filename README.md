@@ -14,7 +14,9 @@ docker build -t nvucinic/jenkins-aws .
 ```
 This will create the jenkins-aws image and install all the necessary plugins.
 
-Once done, run the Docker image and map the port to whatever you wish on your host. In this example, we simply map port 8000 of the host to port 8080 of the Docker (or whatever port was exposed in the Dockerfile):
+Once done, run the Docker image and map the port to whatever you wish on your host. 
+
+In this example, we simply map port 8000 of the host to port 8080 of the Docker (or whatever port was exposed in the Dockerfile):
 
 ```sh
 docker run -d -p 8000:8080 --restart="always" nvucinic/jenkins-aws
