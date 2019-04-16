@@ -30,4 +30,15 @@ docker run -d -p 8000:8080 -v /var/lib/jenkins:/var/jenkins_home --restart="alwa
 - Changing  password is only possible by using the `JENKINS_PASS` environment variable
 - All configuration will be saved into `/var/lib/jenkins`
 
+Removing the `-v` will prevent the Docker container from writing anything to
+the host file system but may result in data loss when the container is removed.
+
 Verify the deployment by navigating to your server address in your preferred browser - http://localhost:8080
+
+## Read More
+
+There are some useful links to get started using Jenkins pipelines in combination
+with AWS.
+
+- [Jenkins-on-aws](https://docs.aws.amazon.com/aws-technical-content/latest/jenkins-on-aws/containerized-deployment.html)
+- [40 Jenkins Features & Plugins You Wished You had Known](https://www.youtube.com/watch?v=3dYM0XUrXHc)
