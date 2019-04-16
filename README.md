@@ -1,9 +1,22 @@
-# jenkins-aws
-- jenkins docker with AWS plugins installed from plugins.txt
-- run: 
+# jenkins-aws: docker with AWS plugins
 
-$ git clone git@github.com:nvucinic/jenkins-aws.git
+### Docker
+Jenkins-AWS is very easy to install and deploy in a Docker container.
 
-$ cd jenkins-aws/
+By default, the Docker will expose port 8080, so change this within the Dockerfile if necessary.
+When ready, simply use the Dockerfile to build the image.
 
-$ docker build -t nvucinic/jenkins-aws .
+```sh
+git clone git@github.com:nvucinic/jenkins-aws.git
+cd enkins-aws
+docker build -t nvucinic/jenkins-aws .
+```
+This will create the jenkins-aws image and install all the necessary plugins.
+
+Once done, run the Docker image and map the port to whatever you wish on your host. In this example, we simply map port 8000 of the host to port 8080 of the Docker (or whatever port was exposed in the Dockerfile):
+
+```sh
+docker run -d -p 8000:8080 --restart="always" nvucinic/jenkins-aws
+```
+
+Verify the deployment by navigating to your server address in your preferred browser - localhost:8080
