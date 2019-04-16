@@ -20,6 +20,7 @@ ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false -Djenkins.CLI.disabled=true
 ## Set default user 
 
 COPY defuser.groovy /usr/share/jenkins/ref/init.groovy.d/
+COPY csfr.groovy /usr/share/jenkins/ref/init.groovy.d/
 
 ## Set Volume 
 
