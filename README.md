@@ -9,7 +9,7 @@ When ready, simply use the Dockerfile to build the image.
 
 ```sh
 git clone git@github.com:nvucinic/jenkins-aws.git
-cd ejnkins-aws
+cd jenkins-aws
 docker build -t nvucinic/jenkins-aws .
 ```
 This will create the jenkins-aws image and install all the necessary plugins.
